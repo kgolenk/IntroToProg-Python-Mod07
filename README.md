@@ -16,4 +16,4 @@ In this assignment I will show how I created a new python script that askes user
 
 #### Pseudo-Code of Script
 
-To create new script for Assignment 07 I used simple template *Lab7-1_starter.py*, that you can see in *Figure 1.* below:
+To create new script for Assignment 07 I used simple template **Lab7-1_starter.py**, that you can see in **Figure 1.** below:
