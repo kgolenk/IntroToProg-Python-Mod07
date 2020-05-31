@@ -20,6 +20,9 @@ To create new script for Assignment 07 I used simple template **Lab7-1_starter.p
 
 ![github-large](https://user-images.githubusercontent.com/65504869/83341245-18050e00-a296-11ea-99fd-0aa9b9b5b004.png)
 
+**Figure.1** Simple Template
+
+
 I downloaded this file and used it as pseudo-code to create my script. Of course, I added more functions to get user input, read and write binary file and display the Menu, to make it more user friendly. 
 
 ### Python Script with Pickling and Exceptions Handling
@@ -28,19 +31,26 @@ As soon the task for this assignment was to create script that can work with bin
 
 ![github-large](https://user-images.githubusercontent.com/65504869/83341256-3539dc80-a296-11ea-8256-83a680d2892b.png)
 
-To read data from binary file AppData.dat I created function, that you can find in Figure 3. Also, in this function I added error handling in case binary file is empty. I found the needed error in list of Python’s exception classes here:
+**Figure 2.** Code for saving data to a binary file.
 
+To read data from binary file AppData.dat I created function, that you can find in Figure 3. Also, in this function I added error handling in case binary file is empty. I found the needed error in list of Python’s exception classes here: 
 https://docs.python.org/3/library/exceptions.html#bltin-exceptions
 
 ![github-large](https://user-images.githubusercontent.com/65504869/83341262-497dd980-a296-11ea-9a7e-b49358e701fc.png)
+
+**Figure 3.** Code for reading data from binary file.
 
 After two main functions have been created, I added another one to Presentation part to get user input new data. As soon my program asks for user ID and Name, there is a chance someone can put letters or special signs for ID. To exclude this, I added **try-except** block to handle ValueError without interruptions. Please check **Figure 4.** to see the code for *get_user_input function*.
 
 ![github-large](https://user-images.githubusercontent.com/65504869/83341269-58fd2280-a296-11ea-9498-97d857a6aeac.png)
 
+**Figure 4.** Code to get user input new data.
+
 Then I added main body of my script with Menu so user can choose an option. Here I used all my functions with proper arguments. Please see **Figure 5.** below:
 
 ![github-large](https://user-images.githubusercontent.com/65504869/83341271-64e8e480-a296-11ea-850c-7e2886c2608c.png)
+
+**Figure 5.** Menu with options to read/save/add new data.
 
 So, I created the python script that asks user to choose an option from the Menu to read the file, add new data or save new data to file, or just exit the program. In next part I will show how the program has been tested in **PyCharm** and **CMD** environments.
 
@@ -50,22 +60,20 @@ I created the empty binary file **AppData.dat** and saved it to the Assighnment0
 
 ![github-large](https://user-images.githubusercontent.com/65504869/83341277-70d4a680-a296-11ea-96ed-fbb7a7f09261.png)
 
+**Figure 6.** Successful test of code in PyCharm.
+
 As you can see in **Figure 6.** I checked current data in the file and got the information that file is empty instead of interruption of code with error. I added new data and saved it to binary file. Then I run test in CMD and checked current data. As you can see in **Figure 7.** my script read data from binary file. Then I added new data and tested input ID with letters, not digits. Finally, I saved new data to a file.
 
 ![github-large](https://user-images.githubusercontent.com/65504869/83341285-82b64980-a296-11ea-8fbd-d3fd9ed232e8.png)
+
+**Figure 7.** Successful test of code in Command Line.
 
 After both tests in PyCharm and CMD I checked my binary file and got the next output that you can find in **Figure 8.**
 
 ![github-large](https://user-images.githubusercontent.com/65504869/83341287-906bcf00-a296-11ea-8935-e7997c26eb4f.png)
 
+**Figure 8.** The data in binary file AppData.dat after tests run.
+
 ### Summary
 
 I read the next chapter in the book and Programing Notes for Module07, I also watched all the videos and used external resources to understand how to work with binary files with pickle. I found several external resources to read about this, and used this one https://wiki.python.org/moin/UsingPickle to understand it more. Also, I learned how to trap errors with try-except blocks.  I wrote new python script and my successful tests showed I created working script to read data from binary file and to write to it with handling errors without halting the execution abruptly.
-
-
-
-
-
-
-
-
